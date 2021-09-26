@@ -1,35 +1,41 @@
 import React from 'react';
-import { Box, Stack, Text } from "@chakra-ui/react";
+import { Stack } from '@chakra-ui/react';
+
 import shirt from '../../public/products/shirt.png';
 import hoodie from '../../public/products/hoodie.png';
 import cap from '../../public/products/cap.png';
+
 import ProductCard from './ProductCard';
 
-let productsArray = [{
-    name: "Black t-shirt",
+const productsArray = [
+  {
+    name: 'Black t-shirt',
     price: 7.95,
-    image: shirt
+    image: shirt,
   },
   {
-    name: "Black hoodie",
+    name: 'Black hoodie',
     price: 13,
-    image: hoodie
+    image: hoodie,
   },
   {
-    name: "Black cap",
+    name: 'Black cap',
     price: 23,
-    image: cap
-  }];
+    image: cap,
+  },
+];
 
 function Body() {
   return (
     <React.Fragment>
-      <Stack p={{base: 2.5, md: 4}} width="100%" direction={{base: "column", md: "column", lg: "row"}}>
-        {
-          productsArray.map((tarjeta,index)=>{
-            return <ProductCard  {...tarjeta}  key= {index}/>
-          })
-        }
+      <Stack
+        p={{ base: 2.5, md: 4 }}
+        width="100%"
+        direction={{ base: 'column', md: 'column', lg: 'row' }}
+      >
+        {productsArray.map((tarjeta, index) => {
+          return <ProductCard {...tarjeta} key={index} />;
+        })}
       </Stack>
     </React.Fragment>
   );

@@ -7,20 +7,20 @@ export default extendTheme({
     secondary: '#ffffff',
   },
   fonts: {
-    body: "Basement Grotesque"
+    body: 'Basement Grotesque',
   },
   styles: {
     global: {
-      "html, body, #root": {
-        height: "100%",
-      }
-    }
+      'html, body, #root': {
+        height: '100%',
+      },
+    },
   },
   breakpoints: {
-    sm: "30em",
-    md: "48em",
-    lg: "62em",
-    xl: "80em",
-    "2xl": "96em",
-  }
+    sm: '30em',
+    md: '48em',
+    lg: '62em',
+    xl: '80em',
+    '2xl': '96em',
+  },
 });
